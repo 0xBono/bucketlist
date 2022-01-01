@@ -36,7 +36,7 @@ export const VoteModal = ({
       emojiSize: 150,
       confettiNumber: 30,
     });
-    onAgree();
+    onAgree!();
   };
 
   const disagreeConfetti = () => {
@@ -45,7 +45,7 @@ export const VoteModal = ({
       emojiSize: 150,
       confettiNumber: 30,
     });
-    onDisagree();
+    onDisagree!();
   };
 
   return (
