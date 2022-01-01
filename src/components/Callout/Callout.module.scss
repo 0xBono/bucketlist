@@ -1,0 +1,22 @@
+.callout-wrap {
+  display: flex;
+  flex-direction: column;
+
+  border-radius: 16px;
+
+  padding: 24px 16px;
+  margin: 16px 0;
+}
+
+.callout-title {
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 24px;
+}
+
+.callout-content {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #a9a9a9;
+}
