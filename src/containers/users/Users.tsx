@@ -3,18 +3,13 @@ import { Card } from 'components/Card';
 import { Callout } from 'components/Callout';
 import { VoteModal } from 'components/Modal';
 import { useModalState } from 'hooks';
-import { useInfiniteQuery, useQuery } from 'react-query';
 
 import classNames from 'classnames/bind';
 import styles from './Users.module.scss';
-import { Key } from 'react';
-import { getBucket } from 'common/api/getBucket';
 
 const cx = classNames.bind(styles);
 
 export const Users = () => {
-  const name = '손지민';
-
   const { modalState, handleOpen, handleClose } = useModalState();
 
   return (
