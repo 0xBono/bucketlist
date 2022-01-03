@@ -1,6 +1,7 @@
 import { createContext, Fragment, useEffect, useRef } from 'react';
 import { ModalWrap } from 'components/Modal';
 import { useModalState } from 'hooks';
+import { DefaultModalType } from 'common/extends';
 
 import JSConfetti from 'js-confetti';
 
@@ -9,9 +10,7 @@ import styles from './VoteModal.module.scss';
 
 const cx = classNames.bind(styles);
 
-interface VoteModalProps {
-  isOpen?: boolean;
-  onClose: () => void;
+interface VoteModalProps extends DefaultModalType {
   onAgree?: () => void;
   onDisagree?: () => void;
 }
