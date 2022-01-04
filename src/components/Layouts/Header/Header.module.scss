@@ -1,6 +1,15 @@
 .header {
   display: flex;
   padding: 24px 0;
+
+  &.center {
+    justify-content: center;
+  }
+
+  @media (max-width: 768px) {
+    padding-top: 16px;
+    padding-bottom: 8px;
+  }
 }
 
 .logo {

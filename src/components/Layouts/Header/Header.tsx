@@ -3,10 +3,14 @@ import styles from './Header.module.scss';
 
 const cx = classNames.bind(styles);
 
-export const Header = () => {
+interface HeaderProps {
+  centered?: boolean;
+}
+
+export const Header = ({ centered }: HeaderProps) => {
   return (
-    <header className={cx('header')}>
-      <img className={cx('logo')} src="bucketry-white-emblem.svg" alt="" />
+    <header className={cx('header', { center: centered })}>
+      <img className={cx('logo')} src="/bucketry-white-emblem.svg" alt="" />
     </header>
   );
 };

@@ -1,0 +1,103 @@
+.emoji-modal {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  z-index: 2;
+  top: 50%;
+  left: 50%;
+  width: 342px;
+  height: 488px;
+  padding: 16px;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+
+  .headline-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    img {
+      width: 16px;
+      cursor: pointer;
+    }
+  }
+
+  .headline {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 32px;
+    color: #fff;
+  }
+
+  .input {
+    background-color: #f1f1f1;
+    color: #191f28;
+
+    margin-top: 16px;
+
+    transition: box-shadow 0.2s ease;
+
+    &:hover {
+      box-shadow: inset 0 0 0 1px #3a28fa;
+      transition: box-shadow 0.2s ease;
+    }
+
+    &:focus-within {
+      box-shadow: inset 0 0 0 1px #3a28fa;
+      outline: none;
+    }
+  }
+
+  .headline {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 32px;
+    color: #fff;
+  }
+
+  .emoji-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    overflow: hidden;
+    overflow-y: scroll;
+    justify-content: center;
+    margin-top: 8px;
+
+    span {
+      font-size: 48px;
+      text-align: center;
+      padding: 8px;
+      cursor: pointer;
+    }
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+
+  .button-group {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 16px;
+    gap: 8px;
+  }
+
+  .button {
+    width: 100%;
+    height: 56px;
+    border: 0;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #3a28fa;
+    color: #fff;
+    cursor: pointer;
+    appearance: none;
+  }
+  .disagree {
+    @extend .button;
+    background-color: #ff3f3f;
+  }
+}
