@@ -1,6 +1,10 @@
 .header {
   display: flex;
   padding: 24px 0;
+
+  &.center {
+    justify-content: center;
+  }
 }
 
 .logo {
