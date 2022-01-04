@@ -5,6 +5,11 @@
   &.center {
     justify-content: center;
   }
+
+  @media (max-width: 768px) {
+    padding-top: 16px;
+    padding-bottom: 8px;
+  }
 }
 
 .logo {
