@@ -8,12 +8,13 @@ const cx = classNames.bind(styles);
 
 interface GNBLayoutProps {
   children: ReactNode;
+  centered?: boolean;
 }
 
-export const GNBLayout = ({ children }: GNBLayoutProps) => {
+export const GNBLayout = ({ children, centered }: GNBLayoutProps) => {
   return (
     <main className={cx('wrap')}>
-      <Header />
+      <Header centered={centered} />
       {children}
     </main>
   );
