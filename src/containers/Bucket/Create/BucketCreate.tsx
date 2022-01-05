@@ -20,13 +20,8 @@ export const BucketCreate = () => {
   const [_, setCreateBucket] = useRecoilState(createBucket);
 
   function handleModalOpen(id: number) {
-    setId(id);
-    handleOpen();
+    Promise.all([setId(id), handleOpen()]);
   }
-
-  useEffect(() => {
-    console.log(bucket);
-  }, [bucket]);
 
   const handleGoal = useCallback((e: React.ChangeEvent<HTMLInputElement>) => {
     setCreateBucket((bucket) => {
